@@ -42,6 +42,8 @@ client.on('message', message => {
             {
                 message.react(message.guild.emojis.find(val => val.name === 'migo'))
                     .catch(console.error);
+                message.react(message.guild.emojis.find(val => val.name === 'maga'))
+                    .catch(console.error);
             }
         }
     }
